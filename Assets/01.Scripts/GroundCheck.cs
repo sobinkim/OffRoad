@@ -11,7 +11,10 @@ public class GroundCheck : MonoBehaviour
     [SerializeField] private float durationValue;
     [SerializeField] private float duration;
 
-   
+    public bool GetIsGround()
+    {
+        return isGround;
+    }
     private float Duration
     {
         get

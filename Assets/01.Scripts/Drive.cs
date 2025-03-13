@@ -10,7 +10,7 @@ public class Drive : MonoBehaviour
     [SerializeField] private float _brakeVal = 300;
     [SerializeField] private GameObject[] Wheel;
     [SerializeField] private float repositionSpeed;
-
+    [SerializeField] private GroundCheck ground;
 
     private Vector2 dir;
  
@@ -27,6 +27,7 @@ public class Drive : MonoBehaviour
     private void Update()
     {
         Go(dir.y,dir.x);
+        if(ground.GetIsGround())
         Reposition();
     }
     private void  Reposition()
@@ -42,10 +43,12 @@ public class Drive : MonoBehaviour
     {
         Quaternion quater;
         Vector3 position;
+        float CurrentSteer = 0; ;
 
+        
+        CurrentSteer = Mathf.Lerp(CurrentSteer, steer,0.7f);
         for (int i = 0; i < wc.Length; i++)
         {
-           
             wc[i].GetWorldPose(out position, out quater);
             Wheel[i].transform.position = position;
             Wheel[i].transform.rotation = quater;
@@ -54,7 +57,8 @@ public class Drive : MonoBehaviour
             {
                 float thrustTourque = accel * torque;
                 wc[i].motorTorque = thrustTourque;
-                wc[i].steerAngle = steer*MaxSteerAngle;
+              
+                wc[i].steerAngle = CurrentSteer*MaxSteerAngle;
             }
           
 

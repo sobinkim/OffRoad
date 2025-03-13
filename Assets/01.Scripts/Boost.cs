@@ -7,6 +7,7 @@ public class Boost : MonoBehaviour
     [SerializeField] private float boostPower;
     [SerializeField] private float coolTime;
     [SerializeField] private float boosDuration;
+    [SerializeField] float speed;
     private IEnumerator co;
 
     Rigidbody rigid;
@@ -16,7 +17,10 @@ public class Boost : MonoBehaviour
         rigid = carbody.GetComponent<Rigidbody>();
         co = null;
     }
-
+    private void Update()
+    {
+      speed = rigid.linearVelocity.magnitude*3.6f;
+    }
     public void GetDir(Vector2 inputdir)
     {
         dir = inputdir;
