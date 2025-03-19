@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: ab5b16500a49c7c47a336164a296656a
+ShaderImporter:
+  externalObjects: {}
+  defaultTextures: []
+  nonModifiableTextures: []
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 284102
+  packageName: LODRoads Demo
+  packageVersion: 1.0.1
+  assetPath: Assets/LODRoad/Shaders/TerrainDelta.shader
+  uploadId: 661577

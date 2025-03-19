@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: f929a744d67c3a444b3abe059fd2ea0c
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 284102
+  packageName: LODRoads Demo
+  packageVersion: 1.0.1
+  assetPath: Assets/LODRoad/Scripts/Spline.cs
+  uploadId: 661577

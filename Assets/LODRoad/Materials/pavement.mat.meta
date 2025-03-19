@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 4012d647df063084488a5d30ca52d723
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 284102
+  packageName: LODRoads Demo
+  packageVersion: 1.0.1
+  assetPath: Assets/LODRoad/Materials/pavement.mat
+  uploadId: 661577

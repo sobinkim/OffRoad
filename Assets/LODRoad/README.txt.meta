@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 9dfac446579246849b3a6cf02d38daa2
+TextScriptImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 284102
+  packageName: LODRoads Demo
+  packageVersion: 1.0.1
+  assetPath: Assets/LODRoad/README.txt
+  uploadId: 661577

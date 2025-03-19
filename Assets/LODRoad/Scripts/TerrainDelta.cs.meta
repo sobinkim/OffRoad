@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 2c11d21da6a9c8e4fb64d190755b0f2b
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 284102
+  packageName: LODRoads Demo
+  packageVersion: 1.0.1
+  assetPath: Assets/LODRoad/Scripts/TerrainDelta.cs
+  uploadId: 661577

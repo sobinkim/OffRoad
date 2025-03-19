@@ -11,12 +11,14 @@ public class Drive : MonoBehaviour
     [SerializeField] private GameObject[] Wheel;
     [SerializeField] private float repositionSpeed;
     [SerializeField] private GroundCheck ground;
+    [SerializeField] private GameObject SkidMarkPrefab;
+    private Transform[] SkidMarkEffect;
 
     private Vector2 dir;
  
     private void Start()
     {
-
+        SkidMarkEffect = new Transform[4];
     }
 
    
@@ -43,7 +45,7 @@ public class Drive : MonoBehaviour
     {
         Quaternion quater;
         Vector3 position;
-        float CurrentSteer = 0; ;
+        float CurrentSteer = 0; 
 
         
         CurrentSteer = Mathf.Lerp(CurrentSteer, steer,0.7f);
@@ -52,7 +54,7 @@ public class Drive : MonoBehaviour
             wc[i].GetWorldPose(out position, out quater);
             Wheel[i].transform.position = position;
             Wheel[i].transform.rotation = quater;
-
+       
             if (i < 2)
             {
                 float thrustTourque = accel * torque;
@@ -80,7 +82,24 @@ public class Drive : MonoBehaviour
         }
     }
   
+    private void DrawSkidMark(int i)
+    {   if(SkidMarkEffect == null)
+        {
+            SkidMarkEffect[i] = Instantiate(SkidMarkPrefab.transform);
 
+            SkidMarkEffect[i].parent = wc[i].transform;
+            SkidMarkEffect[i].localPosition = -Vector3.up * wc[i].radius;
+        }
+      
+       
+    }
 
+    private void RemoveSkidMark(int i)
+    {
+        if (SkidMarkEffect != null)
+            Destroy(SkidMarkEffect[i], 8);
 
+   
+
+    }
 }

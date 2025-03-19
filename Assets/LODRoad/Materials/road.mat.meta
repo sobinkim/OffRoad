@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: ffcc43c837268d94ba123d22977b87e8
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 284102
+  packageName: LODRoads Demo
+  packageVersion: 1.0.1
+  assetPath: Assets/LODRoad/Materials/road.mat
+  uploadId: 661577
