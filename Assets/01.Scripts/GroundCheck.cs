@@ -51,7 +51,7 @@ public class GroundCheck : MonoBehaviour
             bool timerOver = Timer();
             if (timerOver)
             {
-                StartCoroutine(RePlace());
+               // StartCoroutine(RePlace());
                 CO = RePlace();
             }
         }
